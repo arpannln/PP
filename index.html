@@ -1,0 +1,280 @@
+<!-- ARPAN NLN SOFTWARE ENGINEER REACT REDUX DEVELOPER  -->
+<!--JAVASCRIPT PROJECTS -->
+<!DOCTYPE html>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116568117-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116568117-1');
+</script>
+
+<html>
+<title>Arpan NLN</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.polyfills.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+<link rel="stylesheet" href="style.css">
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a data-scroll href="#home" class="w3-bar-item w3-button">ARPAN NLN</a>
+    <a data-scroll href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a data-scroll href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a data-scroll href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+
+  </div>
+
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle hero">
+    <img id="profile" src="http://res.cloudinary.com/arpannln/image/upload/a_90/v1522350995/IMG_2055.jpg"></img>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">SOFTWARE</span> DEVELOPER</span>
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love developing web applications.</em></p>
+  <p> &nbsp &nbsp
+    By the end of my years at UCLA, I had learned two things: I studied Electrical Engineering because I had to, but I studied Software Engineering because I wanted to. My experience with software while completing my degree for EE was how I knew I wanted to aggressively pursue Software Development. Transitioning to software has been a journey that has been difficult some days, but always quite gratifying. Fascinated with the immense potential behind software, I am excited to find challenging opportunities to become the best version of myself and build something inspirational.
+    <br> <br> &nbsp &nbsp
+    Personally, I have experience developing web applications with a wide variety of technologies such as React.js, React Native, Redux, Rails, and other relevant technology. I have found that software development has become the perfect outlet for me to bring out my creative tendencies to complement my naturally inquisitive logical side. While I have had quite a bit of experience, I understand there's a lot of room for growth, which is why I am constantly learning new technologies. I am always looking for opportunities to become the best version of myself.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <!-- <p><b><i class="fa fa-user w3-margin-right"></i>Arpan NLN</b></p><br> -->
+      <!-- <img src="images/me.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333"> -->
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p></p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16" id="technologies">Im really good at:</p>
+  <div class="row">
+      <div class="col s12 m4 l3 tech-box">
+        <i class="devicon-react-original colored"></i>
+        <h3 class="tech-title"> React </h3>
+      </div>
+      <div class="col s12 m4 l3 tech-box">
+        <i class="devicon-ruby-plain colored"></i>
+        <h3 class="tech-title"> Ruby </h3>
+      </div>
+      <div class="col s12 m4 l3 tech-box">
+        <i class="devicon-rails-plain colored"></i>
+        <h3 class="tech-title"> Rails </h3>
+      </div>
+      <div class="col s12 m4 l3 tech-box">
+        <i class="devicon-css3-plain colored"></i>
+        <h3 class="tech-title"> CSS3 </h3>
+      </div>
+      <div class="col s12 m4 l3 tech-box">
+        <i class="devicon-html5-plain colored"></i>
+        <h3 class="tech-title"> HTML5 </h3>
+      </div>
+      <div class="col s12 m4 l3 tech-box">
+        <i class="devicon-javascript-plain colored"></i>
+        <h3 class="tech-title"> JavaScript </h3>
+      </div>
+      <div class="col s12 m4 l3 tech-box">
+        <i class="devicon-sass-original colored"></i>
+        <h3 class="tech-title"> Sass </h3>
+      </div>
+      <div class="col s12 m4 l3 tech-box">
+        <i class="devicon-postgresql-plain"></i>
+        <h3 class="tech-title"> PostgreSQL </h3>
+      </div>
+
+</div>
+
+
+
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest projects. </em></p><br>
+
+
+  <div class="w3-row-padding w3-center project-holder">
+    <div class="w3-col m3">
+      <a href="https://humblepx.herokuapp.com/#/"> <img src="images/HumbleHome.png" class="w3-hover-opacity project" alt="Humble"> </a>
+      <p> Fullstack Web App PhotoSharing Platfrom with Authentication (React/Redux/Rails) </p>
+    </div>
+
+
+    <div class="w3-col m3">
+      <a href="https://arpannln.github.io/NFibber/"><img src="https://res.cloudinary.com/arpannln/image/upload/v1526174613/Screen_Shot_2018-05-12_at_6.23.02_PM.png"  class="w3-hover-opacity project" alt="Bear closeup"></a>
+      <p> Was challenged to build a user interface with vanilla JavaScript, so I did. </p>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://arpannln.github.io/HoveringHarry/"><img src="images/hoveringharryhome.png"  class="w3-hover-opacity project" alt="Bear closeup"></a>
+      <p> Simply because I love Harry Potter, also built with vanilla JS </p>
+    </div>
+
+    <div class="w3-col m3">
+      <a
+      href="https://github.com/arpannln/ReactathonProject/blob/master/microservices/ui/app/src/images/giphy.gif?raw=true"><img src="https://github.com/arpannln/ReactathonProject/blob/master/microservices/ui/app/src/images/giphy.gif?raw=true" class="w3-hover-opacity project" alt="Coffee beans"></a>
+      <p> Live Group Video Chat Platform built during a Hackathon (React/Node.js) </p>
+    </div>
+
+    <div class="w3-col m3">
+      <a href="https://github.com/arpannln/ReactNative"><img class="w3-col m12" src="https://res.cloudinary.com/arpannln/image/upload/v1528936471/Screen_Shot_2018-06-13_at_5.30.25_PM.png"  class="w3-hover-opacity project" alt="Bear closeup"></a>
+      <p> Mobile App I am currently working on, allows users to search GIFs or explore random GIFs to their heart's content (React Native)</p>
+    </div>
+
+  </div>
+
+  </div>
+</div>
+
+
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">How To Reach Me</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> San Francisco, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 408-859-1480<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:arpannln@ucla.edu"> arpannln@ucla.edu </a> <br>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- <p>Swing by for a cup of <i class="fa fa-coffee"></i> -->
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 footer-holder">
+
+  <div class="w3-xlarge w3-section footer-holder ">
+    <a href="https://github.com/arpannln"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/arpannln/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+
+
+
+
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<script>
+    	var scroll = new SmoothScroll('a[href*="#"]') </script>
+</body>
+</html>
+
+<!-- leave me a note:</p>
+<form action="/action_page.php" target="_blank">
+<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+  <div class="w3-half">
+    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+  </div>
+  <div class="w3-half">
+    <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+  </div>
+</div>
+<input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+<button class="w3-button w3-black w3-right w3-section" type="submit">
+  <i class="fa fa-paper-plane"></i> SEND MESSAGE
+</button>
+</form> -->
